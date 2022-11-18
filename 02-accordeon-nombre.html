@@ -5,8 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
   </head>
   <body>
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+    <accordeon x-data="{ isOpen: false }">
+      <section >
+        <button @click="isOpen = 0">bouton 0</button>
+        <p x-show="isOpen === 0" x-transition.duration.300ms>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem alias illo ipsam aliquam sint molestiae modi unde, deleniti, doloribus, quis magnam dolorem omnis ipsum. Minus illo optio odit similique quae.</p>
+      </section>
+      <section >
+        <button @click="isOpen = 1">bouton 1</button>
+        <p x-show="isOpen === 1" x-transition.duration.300ms>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem alias illo ipsam aliquam sint molestiae modi unde, deleniti, doloribus, quis magnam dolorem omnis ipsum. Minus illo optio odit similique quae.</p>
+      </section>
+      <section >
+        <button @click="isOpen = 2">bouton 2</button>
+        <p x-show="isOpen === 2" x-transition.duration.300ms>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem alias illo ipsam aliquam sint molestiae modi unde, deleniti, doloribus, quis magnam dolorem omnis ipsum. Minus illo optio odit similique quae.</p>
+      </section>
+    </accordeon>
   </body>
 </html>
