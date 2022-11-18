@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
     <title>Accordéon avec x-collapse</title>
   </head>
   <body>
@@ -11,15 +17,15 @@
     <accordeon x-data="{ isOpen: false }">
       <section >
         <button @click="isOpen = 0">bouton 0</button>
-        <p x-show="isOpen === 0" x-transition.scale.origin.top.duration.500ms>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem alias illo ipsam aliquam sint molestiae modi unde, deleniti, doloribus, quis magnam dolorem omnis ipsum. Minus illo optio odit similique quae.</p>
+        <p x-show="isOpen === 0" x-collapse>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem alias illo ipsam aliquam sint molestiae modi unde, deleniti, doloribus, quis magnam dolorem omnis ipsum. Minus illo optio odit similique quae.</p>
       </section>
       <section >
         <button @click="isOpen = 1">bouton 1</button>
-        <p x-show="isOpen === 1" x-transition.scale.origin.top.duration.500ms>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem alias illo ipsam aliquam sint molestiae modi unde, deleniti, doloribus, quis magnam dolorem omnis ipsum. Minus illo optio odit similique quae.</p>
+        <p x-show="isOpen === 1" x-collapse>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem alias illo ipsam aliquam sint molestiae modi unde, deleniti, doloribus, quis magnam dolorem omnis ipsum. Minus illo optio odit similique quae.</p>
       </section>
       <section >
         <button @click="isOpen = 2">bouton 2</button>
-        <p x-show ="isOpen === 2" x-transition.scale.origin.top.duration.500ms>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem alias illo ipsam aliquam sint molestiae modi unde, deleniti, doloribus, quis magnam dolorem omnis ipsum. Minus illo optio odit similique quae.</p>
+        <p x-show ="isOpen === 2" x-collapse >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem alias illo ipsam aliquam sint molestiae modi unde, deleniti, doloribus, quis magnam dolorem omnis ipsum. Minus illo optio odit similique quae.</p>
       </section>
     </accordeon>
   </body>
