@@ -6,7 +6,7 @@
 
 #accordeon li {
      display: flex;
-    background-color: #EEE;
+    background-color: rgb(190, 190, 190);
     list-style-type: none;
     overflow: hidden;
     width: 107px;
@@ -43,3 +43,8 @@
      display: block;
      vertical-align: top;
 }
+
+ul#accordeon li figure h3 {
+     margin: 0px;
+     height: 2em;
+ }
