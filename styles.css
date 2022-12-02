@@ -48,3 +48,9 @@ ul#accordeon li figure h3 {
      margin: 0px;
      height: 2em;
  }
+
+ #accordeon li figure img {
+     width: 100px;
+     height: 100px;
+ }
+ 
