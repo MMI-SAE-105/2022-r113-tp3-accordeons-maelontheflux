@@ -15,7 +15,7 @@
     padding: 5px;
 
     /* CSS Transition */
-    -webkit-transition: all 1s ea se-in-out;
+    -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
