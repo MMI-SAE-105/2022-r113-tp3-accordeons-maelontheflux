@@ -1,18 +1,25 @@
 #accordeon {
-     /* pour que les éléments soient alignés horizontalement */
-     /* pour éviter les marges par défaut */
-     /* pour éviter les "padding" par défaut */
+     display: flex;
+     margin: 0;
+     padding: 0;
 }
 
 #accordeon li {
-     /* largeur de chaque élément replié 107px */
-     /* pour cacher le contenu dépassant de l'élément */
-     /* pour l'animation, transition sur width */
-     /* couleur de fond #eee */
-     /* pour enlever les puces */
-     /* pour espacer les éléments, marge de 3px */
-     /* pour espacer le contenu, padding de 5px */
-     /* pour arrondir les bords de 5px */
+     display: flex;
+    background-color: #EEE;
+    list-style-type: none;
+    overflow: hidden;
+    width: 107px;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 5px;
+
+    /* CSS Transition */
+    -webkit-transition: all 1s ea se-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 #accordeon li.actif {
