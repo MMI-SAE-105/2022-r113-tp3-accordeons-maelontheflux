@@ -6,13 +6,13 @@
 
 #accordeon li {
      display: flex;
-    background-color: rgb(190, 190, 190);
-    list-style-type: none;
-    overflow: hidden;
-    width: 107px;
-    margin: 5px;
-    border-radius: 20px;
-    padding: 5px;
+     background-color: rgb(190, 190, 190);
+     list-style-type: none;
+     overflow: hidden;
+     width: 107px;
+     margin: 5px;
+     border-radius: 20px;
+     padding: 5px;
 
     /* CSS Transition */
     -webkit-transition: all 1s ease-in-out;
